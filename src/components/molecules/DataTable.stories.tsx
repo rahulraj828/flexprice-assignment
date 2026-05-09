@@ -25,8 +25,8 @@ const MOCK_COLUMNS: Column<MockData>[] = [
   { key: 'plan', header: 'Plan Status' },
 ];
 
-// Generate 1,000 mock rows for the virtualization challenge
-const MOCK_DATA: MockData[] = Array.from({ length: 1000 }).map((_, i) => ({
+// Generate 10,000 mock rows for the virtualization challenge
+const MOCK_DATA: MockData[] = Array.from({ length: 10000 }).map((_, i) => ({
   id: i,
   name: `Customer ${i}`,
   plan: i % 2 === 0 ? 'Active' : 'Archived',
